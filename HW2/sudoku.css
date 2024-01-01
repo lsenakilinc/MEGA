@@ -1,0 +1,56 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #b5bda3;
+}
+
+
+.sudoku-board {
+    /* margin-top: auto; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    /* border: 2px solid #761818; */
+}
+
+.sudoku-square {
+    display: grid;
+    grid-template-columns: repeat(3, 40px);
+    grid-template-rows: repeat(3, 40px);
+    gap: 1px;
+}
+
+.sudoku-cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    width: 40px;
+    height: 40px;
+    border: 5px solid #761818;
+    background-color: #fff;
+    /* Add the following line to set a different border color */
+    border-color: #761818;
+}
+
+.sudoku-cell:nth-child(3n) {
+    border-right: 5px solid #761818; /* Change border color */
+}
+
+.sudoku-cell:nth-child(9n) {
+    border-right: 5px solid #761818; /* Change border color */
+}
+
+.sudoku-cell:nth-child(3) ~ .sudoku-cell {
+    border-top: 5px solid #761818; /* Change border color */
+}
+
+.sudoku-cell:nth-child(n + 7) {
+    border-top: 5px solid #761818; /* Change border color */
+}
