@@ -1,0 +1,1 @@
+grad projesinde meram belediyesi için basit bir internet sitesi template'ı oluşturdum. şuanlık sadece home,projects,mayor ve contact kısmı var. projects kısmında resmi siteden bulduğum bazı projeleri ekledim ve yazıların üstüne resmi siteye gidip daha ayrıntılı bilgi alınabilmesi için linki ekledim. contact kısmında ise diretk resmi siteye yönlendirdim.
